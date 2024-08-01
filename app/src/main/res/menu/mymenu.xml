@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu1"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Menu Search"
+        app:showAsAction="always"></item>
+
+    <item android:id="@+id/login1"
+        android:icon="@drawable/ic_base_login_home"
+        android:title="Login"
+        app:showAsAction="always"
+
+        ></item>
+</menu>

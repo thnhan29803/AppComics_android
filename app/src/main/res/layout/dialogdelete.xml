@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Bạn có đồng ý xóa truyện này không ? "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/buttonYes"
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:layout_marginLeft="15dp"
+            android:id="@+id/buttonNo"
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

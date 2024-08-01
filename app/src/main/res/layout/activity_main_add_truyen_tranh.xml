@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAddTruyenTranh">
+
+    <EditText
+        android:id="@+id/edtNameChaper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:hint="Tên chapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:hint="Đường dẫn url"
+        app:layout_constraintEnd_toEndOf="@+id/edtNameChaper"
+        app:layout_constraintStart_toStartOf="@+id/edtNameChaper"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameChaper" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/edtUrl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        tools:layout_editor_absoluteY="209dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

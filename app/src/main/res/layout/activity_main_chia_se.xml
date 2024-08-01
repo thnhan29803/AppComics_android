@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainChiaSe"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chia sẻ với :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    <EditText
+        android:id="@+id/edit_text_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" abc@example.com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lời mời xem truyện."
+        android:inputType="textEmailSubject" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:lines="10"
+        android:text="Truyện hay lắm, mời bạn tải app về đọc với mình nhé! ^^ \n https://play.google.com/store/apps/details?id=truyen88.net" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chia sẻ" />
+
+</LinearLayout>
